@@ -108,8 +108,9 @@ display: block;
 padding-top: 24px;
 padding-bottom: 24px;
 
+transition-property: color;
 transition-duration: 250ms;
-transition-timing-function: transform cubic-bezier(0.4, 0, 0.2, 1);
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-link:hover,
 .list-link:focus {
@@ -121,7 +122,7 @@ transition-timing-function: transform cubic-bezier(0.4, 0, 0.2, 1);
 .current-nav::after {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   content:"";
   width: 100%;
   height: 4px;
@@ -151,9 +152,9 @@ transition-timing-function: transform cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--brand-color); 
   padding-top: 24px;
   padding-bottom: 24px;
-
-  transition-duration: 250ms;
-transition-timing-function: transform cubic-bezier(0.4, 0, 0.2, 1);
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-connection:hover,
 .list-connection:focus {
@@ -203,8 +204,9 @@ display: block;
 padding: 16px 32px;
 margin: 0 auto;
 
+transition-property: background-color;
 transition-duration: 250ms;
-transition-timing-function: transform cubic-bezier(0.4, 0, 0.2, 1);
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -345,8 +347,9 @@ margin-bottom: 8px;
   justify-content: center;
   align-items: center;
 
+  transition-property: background-color;
   transition-duration: 250ms;
-transition-timing-function: transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-link:hover,
 .socials-link:focus {
@@ -386,8 +389,9 @@ transition-timing-function: transform cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #8E8F99;
   border-radius: 4px;
   fill: #8E8F99;
-  transition-duration: 250ms;
-transition-timing-function: transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-list-link:hover,
 .customers-list-link:focus {
@@ -414,7 +418,6 @@ transition-timing-function: transform cubic-bezier(0.4, 0, 0.2, 1);
 .filter-button {
   font-family: 'Roboto', sans-serif;
   background-color: var(--section-color);
-  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -423,14 +426,15 @@ transition-timing-function: transform cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--logo-color);
-  border: 1px solid var(--border-color);
   border-radius: 4px;
+  border: 1px solid var(--border-color);
   cursor: pointer;
   
   padding: 12px 24px;
 
-transition-duration: 250ms;
-transition-timing-function: transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -449,8 +453,9 @@ gap: 48px 24px;
 } */
 .items-link {
   display: block;
-  transition-duration: 250ms;
-  transition-timing-function: transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .items-link:hover,
 .items-link:focus {
@@ -576,8 +581,9 @@ margin-bottom: 16px;
   justify-content: center;
   align-items: center;
 
+  transition-property: background-color;
   transition-duration: 250ms;
-transition-timing-function: transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socials-link:hover,
 .footer-socials-link:focus {
